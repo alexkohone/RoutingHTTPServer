@@ -18,6 +18,7 @@
 - (void)setUp {
 	[super setUp];
 	http = [[RoutingHTTPServer alloc] init];
+    [http setPort:8080];
 	[self setupRoutes];
 }
 
